@@ -13,20 +13,16 @@
                         <tr>
                           <th>Id</th>
                           <th>No Kamar</th>
-                          <th>Harga</th>
-                          <th>Kapasitas</th>
-                          <th>Tipe</th>
+                          <th>Fasilitas</th>
                           <th>Actions</th>
                         </tr>
                       </thead>
-                      @foreach($data_hotel as $dh)
+                      @foreach($data_kamar as $dk)
                       <tbody>
                         <tr>
-                         <td>{{ $dh->id }}</td>
-                         <td>{{ $dh->no_kamar }}</td>
-                         <td>{{ $dh->harga }}</td>
-                         <td>{{ $dh->kapasitas }}</td>
-                         <td>{{ $dh->tipe }}</td>
+                         <td>{{ $dk->id }}</td>
+                         <td>{{ $dk->no_kamar }}</td>
+                         <td>{{ $dk->fasilitas }}</td>
                          <td>
                           <button type="button" class="btn btn-warning">Edit</button>
                           <button type="button" class="btn btn-danger">Hapus</button>

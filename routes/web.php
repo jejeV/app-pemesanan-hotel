@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\FasilitasKamarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('hotel');
-});
+Route::get('/hotel', [PostController::class, 'index']);
+
+Route::get('/fasilitas', [FasilitasKamarController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
