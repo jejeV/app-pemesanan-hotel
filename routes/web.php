@@ -15,6 +15,13 @@ use App\Http\Controllers\FasilitasKamarController;
 |
 */
 
+// API
+Route::apiResource('/posts', App\Http\Controllers\Api\PostController::class);
+
+Route::get('/tamu', function () {
+    return view('tamu');
+});
+
 Route::get('/hotel', [PostController::class, 'index']);
 
 Route::get('/fasilitas', [FasilitasKamarController::class, 'index']);

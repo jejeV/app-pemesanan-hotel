@@ -5,19 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-
-class Post extends Model
+class Kamar extends Model
 {
     use HasFactory;
+
     /**
      * fillable
      *
      * @var array
      */
     protected $fillable = [
-        'no_kamar',
-        'harga',
-        'kapasitas',
-        'tipe',
+        'image',
+        'title',
+        'content',
     ];
 }

@@ -8,10 +8,10 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-     public function index(){
-      $data_hotel = Post::all();
-      return view('hotel', [
-         'data_hotel' => $data_hotel
-      ]);
-     }
+   //   public function index(){
+   //    $data_hotel = Post::all();
+   //    return view('hotel', [
+   //       'data_hotel' => $data_hotel
+   //    ]);
+   //   }
 }
